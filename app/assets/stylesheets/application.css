@@ -119,3 +119,7 @@
   border-radius: 50%;
   border: 4px solid #209cee;
 }
+
+.black {
+  color: #363636 !important;
+}
