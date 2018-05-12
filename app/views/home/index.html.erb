@@ -101,6 +101,40 @@
   </div>
 </section>
 
+<section class="section">
+  <h1 class="title">Experience</h1>
+  <div class="columns is-multiline is-hidden-touch">
+    <div class="column has-text-weight-bold">
+      Company
+    </div>
+    <div class="column has-text-weight-bold">
+      Duration
+    </div>
+    <div class="column has-text-weight-bold">
+      Role
+    </div>
+    <div class="column is-half has-text-weight-bold">
+      Description
+    </div>
+  </div>
+  <% @document.experiences.each_with_index do |experience, index| %>
+    <div class="columns is-multiline <%= index.even? ? 'has-background-white-ter' : nil %>">
+      <div class="column">
+        <%= experience.company %>
+      </div>
+      <div class="column">
+        <%= experience.duration %>
+      </div>
+      <div class="column">
+        <%= experience.title %>
+      </div>
+      <div class="column is-half">
+        <%= experience.description %>
+      </div>
+    </div>
+  <% end %>
+</section>
+
 <script>
   window.onload = function() {
     GitHubCalendar('#github-contributions', 'jeremywrowe');

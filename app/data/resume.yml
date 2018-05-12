@@ -5,14 +5,35 @@ experiences:
     start_date: October 2017
     description: >
       Chargify is a recurring billing SaaS company which is built as a Ruby on Rails Application.
-      I help develop, design, and maintain the large legacy application. I also mentor and teach
-      new developers and help pave the way for new patterns and design decisions.
+      I help develop and maintain the large legacy application. Day to day, I work with ElasticSearch, Ruby on Rails,
+      Mysql, and ReactJS. I also architect, design and implement new core features. Lastly, I mentor and teach new developers
+      through pair programming and peer reviewal.
   - company: Citrix
-    title: Senior Software Developer & Manager Product Development
+    title: Manager of Product Development
     start_date: April 2015
     end_date: September 2017
     description: >
-      At Citrix I worked on and managed several products and supporting products. (RightSignature, ShareFile)
-      I started off as a senior developer and was moved into a management position. As I went down the management
-      path, I still stayed completely hands on, helping developers level up. I worked with TypeScript, Ruby on Rails,
-      and C Sharp.
+      At Citrix I developed and maintained several products including RightSignature and ShareFile using a variety
+      of technologies including TypeScript, Ruby on Rails, and C Sharp.
+      Within my first year at Citrix I was promoted from a Senior Developer to Manager of Product Development.
+      Through my role as a manager, I still remained hands on while mentoring developers.
+  - company: Chargify
+    title: Senior Software Developer
+    start_date: November 2012
+    end_date: April 2015
+    description: (described above)
+  - company: Mutually Human Software
+    title: Software Developer
+    start_date: April 2012
+    end_date: November 2012
+    description: >
+      Mutually Human Software is a consulting software company based in Grand Rapids, Michigan.
+      During my time there, I developed software for multiple clients. I used everything from iOS,
+      Ruby on Rails, to Java development.
+  - company: Blue Medora, LLC
+    title: Director of Product Development
+    start_date: February 2009
+    end_date: September 2011
+    description: >
+      Blue Medora is a small startup in Grand Rapids, Michigan that develops monitoring and platform connectors.
+      At Blue Medora I managed a team and developed several products using a wide number of programming languages.
