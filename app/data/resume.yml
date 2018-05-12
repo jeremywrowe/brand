@@ -1,0 +1,18 @@
+---
+experiences:
+  - company: Chargify
+    title: Senior Software Developer
+    start_date: October 2017
+    description: >
+      Chargify is a recurring billing SaaS company which is built as a Ruby on Rails Application.
+      I help develop, design, and maintain the large legacy application. I also mentor and teach
+      new developers and help pave the way for new patterns and design decisions.
+  - company: Citrix
+    title: Senior Software Developer & Manager Product Development
+    start_date: April 2015
+    end_date: September 2017
+    description: >
+      At Citrix I worked on and managed several products and supporting products. (RightSignature, ShareFile)
+      I started off as a senior developer and was moved into a management position. As I went down the management
+      path, I still stayed completely hands on, helping developers level up. I worked with TypeScript, Ruby on Rails,
+      and C Sharp.
