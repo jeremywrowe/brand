@@ -1,25 +1,13 @@
 <section class="section">
   <div class="container">
-    <nav class="level">
+    <nav class="level is-mobile is-hidden-desktop">
       <div class="level-item has-text-centered bounceIn">
-        <article class="media">
-          <div class="media-left">
-            <figure class="image is-64x64">
-              <%= image_tag "me.png", alt: "Jeremy W. Rowe", class: 'round-image' %>
-            </figure>
-          </div>
-          <div class="media-content">
-            <div class="content">
-              <p>
-                <strong>Jeremy W. Rowe</strong>
-                <br>
-                Software Developer
-                <br>
-                Avid Mountain Biker
-              </p>
-            </div>
-          </div>
-        </article>
+        <%= render partial: "avatar" %>
+      </div>
+    </nav>
+    <nav class="level is-mobile">
+      <div class="level-item has-text-centered is-hidden-touch bounceIn">
+        <%= render partial: "avatar" %>
       </div>
       <div class="level-item has-text-centered">
         <div>
@@ -52,18 +40,18 @@
 <section class="hero is-medium is-info is-bold">
   <div class="hero-body">
     <div class="container">
-      <div class="columns">
+      <div class="columns is-mobile is-hidden-desktop has-centered-text">
         <div class="column">
-          <h1 class="title">
-            TL;DR
-          </h1>
-          <h2 class="subtitle black">
-            (the short and sweet)
-          </h2>
+          <%= render partial: "tldr" %>
         </div>
-        <div class="column is-two-thirds">
+      </div>
+      <div class="columns is-mobile">
+        <div class="column is-hidden-touch is-one-quarter-desktop">
+          <%= render partial: "tldr" %>
+        </div>
+        <div class="column">
           <p>
-            <i class="fas fa-info-circle title black"></i>
+            <i class="fas fa-info-circle title has-text-dark"></i>
             <br>
             I am a developer that loves to help take products and teams to the next level. I've built applications of differing scales, languages, and domains.
             My favorite place to be is in uncharted territory, and I typically write automated tests to get myself out of sticky situations.
@@ -72,7 +60,7 @@
           <br>
           <br>
           <p>
-            <i class="fas fa-terminal title black"></i>
+            <i class="fas fa-terminal title has-text-dark"></i>
             <br>
             Although I have programmed in many different languages, I prefer Ruby (on Rails) and JavaScript. That being said, if I am solving interesting problems,
             I am willing to bend on that a little bit.
@@ -88,7 +76,7 @@
     <h1 class="title">My Contributions</h1>
     <div id="github-contributions">
       <div class="fa-3x">
-        <i class="fas fa-circle-notch fa-spin black"></i>
+        <i class="fas fa-circle-notch fa-spin has-text-dark"></i>
       </div>
     </div>
   </div>
@@ -97,12 +85,12 @@
 <section class="hero is-medium is-info is-bold">
   <div class="hero-body">
     <div class="container">
-      <div class="columns">
+      <div class="columns is-mobile">
         <div class="column">
           <h1 class="title">
             The nitty gritty
           </h1>
-          <h2 class="subtitle black">
+          <h2 class="subtitle has-text-dark">
             (resumé)
           </h2>
         </div>
