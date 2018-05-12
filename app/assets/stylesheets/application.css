@@ -111,6 +111,33 @@
   animation-name: bounceIn;
 }
 
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
 .small {
   font-size: 0.8em;
 }
@@ -118,4 +145,8 @@
 .round-image {
   border-radius: 50%;
   border: 4px solid #209cee;
+}
+
+#github-section {
+  height: 450px;
 }
