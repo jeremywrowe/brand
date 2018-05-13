@@ -1,17 +1,17 @@
 <article class="media">
   <div class="media-left">
     <figure class="image is-64x64">
-      <%= image_tag "me.png", alt: "Jeremy W. Rowe", class: 'round-image' %>
+      <%= image_tag avatar.url, alt: avatar.name, class: 'round-image' %>
     </figure>
   </div>
   <div class="media-content">
     <div class="content">
       <p>
-        <strong>Jeremy W. Rowe</strong>
-        <br>
-        Software Developer
-        <br>
-        Avid Mountain Biker
+        <strong><%= avatar.name %></strong>
+        <% avatar.blurbs.each do |blurb| %>
+          <br>
+          <%= blurb %>
+        <% end %>
       </p>
     </div>
   </div>

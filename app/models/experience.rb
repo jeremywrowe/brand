@@ -10,6 +10,6 @@ class Experience
   end
 
   def duration
-    "#{start_date} - #{end_date || 'Present'}"
+    "#{start_date} - #{end_date.presence || 'Present'}"
   end
 end

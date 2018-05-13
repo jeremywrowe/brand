@@ -10,4 +10,8 @@ class Document
     @experiences ||= @data['experiences']
       .map { |e| Experience.new(e['company'], e['title'], e['start_date'], e['end_date'], e['description']) }
   end
+
+  def avatar
+    @avatar ||= Avatar.new(@data['avatar'] || {})
+  end
 end

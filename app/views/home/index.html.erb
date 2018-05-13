@@ -2,12 +2,12 @@
   <div class="container">
     <nav class="level is-mobile is-hidden-desktop">
       <div class="level-item has-text-centered bounceIn">
-        <%= render partial: "avatar" %>
+        <%= render partial: "avatar", locals: { avatar: @document.avatar } %>
       </div>
     </nav>
     <nav class="level is-mobile">
       <div class="level-item has-text-centered is-hidden-touch bounceIn">
-        <%= render partial: "avatar" %>
+        <%= render partial: "avatar", locals: { avatar: @document.avatar } %>
       </div>
       <div class="level-item has-text-centered">
         <div>

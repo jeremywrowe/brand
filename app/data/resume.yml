@@ -1,4 +1,10 @@
 ---
+avatar:
+  url: https://avatars2.githubusercontent.com/u/396364
+  name: Jeremy W. Rowe
+  blurbs:
+    - Software Developer
+    - Avid Mountain Biker
 experiences:
   - company: Chargify
     title: Senior Software Developer
