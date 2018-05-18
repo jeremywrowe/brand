@@ -37,10 +37,7 @@
         <div class="column">
           <p>
             <br>
-            I am a developer that loves to help take products and teams to the next level. I've built applications of differing scales, languages, and domains.
-            My favorite place to be is in uncharted territory. When presented with a challenging programming problem, I typically write automated tests to get
-            a deeper understanding of the issue. I strive to keep applications simple, understandable, performant, and secure. I enjoy working as part of a
-            team that collaborates to create innovative solutions to complex problems.
+            <%= @document.bio %>
           </p>
         </div>
       </div>
@@ -112,6 +109,6 @@
 
 <script>
   window.onload = function() {
-    GitHubCalendar('#github-contributions', 'jeremywrowe');
+    GitHubCalendar('#github-contributions', '<%= @document.github_username %>');
   }
 </script>

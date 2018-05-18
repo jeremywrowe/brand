@@ -1,4 +1,5 @@
 ---
+github_username: jeremywrowe
 avatar:
   url: https://avatars2.githubusercontent.com/u/396364
   name: Jeremy W. Rowe
@@ -18,6 +19,11 @@ contact_locations:
   - heading: Twitter
     link: https://twitter.com/jeremy_w_rowe
     icon: fab fa-twitter
+bio: >
+  I am a developer that loves to help take products and teams to the next level. I've built applications of differing scales, languages, and domains.
+  My favorite place to be is in uncharted territory. When presented with a challenging programming problem, I typically write automated tests to get
+  a deeper understanding of the issue. I strive to keep applications simple, understandable, performant, and secure. I enjoy working as part of a
+  team that collaborates to create innovative solutions to complex problems.
 experiences:
   - company: Chargify
     title: Senior Software Developer

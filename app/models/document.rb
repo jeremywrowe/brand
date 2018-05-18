@@ -19,4 +19,12 @@ class Document
     @contact_locations ||= @data.fetch('contact_locations', [])
       .map { |contact_location| ContactLocation.new(contact_location) }
   end
+
+  def bio
+    @bio ||= @data['bio']
+  end
+
+  def github_username
+    @github_username ||= @data['github_username']
+  end
 end
