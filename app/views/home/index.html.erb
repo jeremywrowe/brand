@@ -9,30 +9,18 @@
       <div class="level-item has-text-centered is-hidden-touch bounceIn">
         <%= render partial: "avatar", locals: { avatar: @document.avatar } %>
       </div>
-      <div class="level-item has-text-centered">
-        <div>
-          <p class="heading">E-Mail</p>
-          <p class="title"><a href="mailto:jeremy.w.rowe@gmail.com"><i class="fas fa-at"></i></a></p>
+      <% @document.contact_locations.each do |location| %>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading"><%= location.heading %></p>
+            <p class="title">
+              <a target="_blank" href="<%= location.link %>">
+                <i class="<%= location.icon %>" /></i>
+              </a>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="level-item has-text-centered">
-        <div>
-          <p class="heading">Github</p>
-          <p class="title"><a target="_blank" href="https://github.com/jeremywrowe"><i class="fab fa-github"></i></a></p>
-        </div>
-      </div>
-      <div class="level-item has-text-centered">
-        <div>
-          <p class="heading">Linked-In</p>
-          <p class="title"><a target="_blank" href="https://www.linkedin.com/in/jeremywrowe"><i class="fab fa-linkedin"></i></a></p>
-        </div>
-      </div>
-      <div class="level-item has-text-centered">
-        <div>
-          <p class="heading">Twitter</p>
-          <p class="title"><a target="_blank" href="https://twitter.com/jeremy_w_rowe"><i class="fab fa-twitter"></i></a></p>
-        </div>
-      </div>
+      <% end %>
     </nav>
   </div>
 </section>

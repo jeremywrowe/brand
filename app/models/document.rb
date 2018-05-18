@@ -8,10 +8,15 @@ class Document
 
   def experiences
     @experiences ||= @data['experiences']
-      .map { |e| Experience.new(e['company'], e['title'], e['start_date'], e['end_date'], e['description']) }
+      .map { |experience| Experience.new(*experience.values_at('company', 'title', 'start_date', 'end_date', 'description')) }
   end
 
   def avatar
     @avatar ||= Avatar.new(@data['avatar'] || {})
+  end
+
+  def contact_locations
+    @contact_locations ||= @data.fetch('contact_locations', [])
+      .map { |contact_location| ContactLocation.new(contact_location) }
   end
 end

@@ -5,6 +5,19 @@ avatar:
   blurbs:
     - Software Developer
     - Avid Mountain Biker
+contact_locations:
+  - heading: E-Mail
+    link: mailto:jeremy.w.rowe@gmail.com
+    icon: fas fa-at
+  - heading: Github
+    link: https://github.com/jeremywrowe
+    icon: fab fa-github
+  - heading: Linked-In
+    link: https://www.linkedin.com/in/jeremywrowe
+    icon: fab fa-linkedin
+  - heading: Twitter
+    link: https://twitter.com/jeremy_w_rowe
+    icon: fab fa-twitter
 experiences:
   - company: Chargify
     title: Senior Software Developer
