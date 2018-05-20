@@ -147,6 +147,10 @@
   border: 4px solid #209cee;
 }
 
+.has-centered-items {
+  align-items: center;
+}
+
 #github-section {
   height: 450px;
 }
@@ -158,7 +162,8 @@
     height: 600px;
   }
 
-  .legend, .contrib-footer {
+  .legend,
+  .contrib-footer {
     display: none !important;
   }
 }
