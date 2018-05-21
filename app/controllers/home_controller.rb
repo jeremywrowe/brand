@@ -2,6 +2,6 @@
 
 class HomeController < ApplicationController
   def index
-    @document = Document.new
+    @resume_content = ResumeContent.new
   end
 end

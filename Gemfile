@@ -12,6 +12,7 @@ gem 'rails', '~> 5.2.0'
 gem 'sass-rails', '~> 5.0'
 
 gem 'prawn'
+gem 'prawn-table'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]

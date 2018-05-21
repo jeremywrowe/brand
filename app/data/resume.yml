@@ -10,15 +10,20 @@ contact_locations:
   - heading: E-Mail
     link: mailto:jeremy.w.rowe@gmail.com
     icon: fas fa-at
+    email: true
   - heading: Github
     link: https://github.com/jeremywrowe
     icon: fab fa-github
-  - heading: Linked-In
+    email: false
+  - heading: LinkedIn
     link: https://www.linkedin.com/in/jeremywrowe
     icon: fab fa-linkedin
+    email: false
   - heading: Twitter
     link: https://twitter.com/jeremy_w_rowe
     icon: fab fa-twitter
+    unicode: \uf099
+    email: false
 bio: >
   I am a developer that loves to help take products and teams to the next level. I've built applications of differing scales, languages, and domains.
   My favorite place to be is in uncharted territory. When presented with a challenging programming problem, I typically write automated tests to get

@@ -1,6 +1,6 @@
 require 'yaml'
 
-class Document
+class ResumeContent
   def initialize(data_path = Rails.root.join('app', 'data', 'resume.yml'))
     @data_path = data_path
     @data = YAML.load_file(data_path)
