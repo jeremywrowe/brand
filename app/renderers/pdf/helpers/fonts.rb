@@ -9,6 +9,10 @@ module Pdf
           },
           'FaBrands' => {
             normal: File.join(base_dir, 'fa-brands.ttf')
+          },
+          'OpenSans' => {
+            normal: File.join(base_dir, 'OpenSans-Regular.ttf'),
+            bold: File.join(base_dir, 'OpenSans-Bold.ttf')
           }
         )
       end
