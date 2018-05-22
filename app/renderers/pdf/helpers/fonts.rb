@@ -15,6 +15,7 @@ module Pdf
             bold: File.join(base_dir, 'OpenSans-Bold.ttf')
           }
         )
+        font(:OpenSans)
       end
     end
   end

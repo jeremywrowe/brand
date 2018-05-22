@@ -1,4 +1,3 @@
-require 'prawn'
 require 'open-uri'
 require 'timeout'
 
