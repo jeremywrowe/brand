@@ -84,10 +84,10 @@ module Pdf
       end
 
       move_down 60
-      text @resume_content.bio
+      text @resume_content.bio, size: 10
 
       move_down 40
-      text 'Experience', font_size: 10, style: :bold
+      text 'Experience', size: 12, style: :bold
       move_down 10
 
       experiences = @resume_content.experiences
