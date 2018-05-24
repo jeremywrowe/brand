@@ -107,6 +107,13 @@
   <% end %>
 </section>
 
+<section class="section">
+  <%= link_to resume_path(format: :pdf), class: 'button is-info is-medium is-pulled-right' do %>
+    <i class="far fa-file-pdf"></i>&nbsp;Download Resume
+  <% end %>
+  <br />
+</section>
+
 <script>
   window.onload = function() {
     GitHubCalendar('#github-contributions', '<%= @resume_content.github_username %>');
