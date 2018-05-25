@@ -27,5 +27,3 @@ group :test do
   gem 'chromedriver-helper'
   gem 'selenium-webdriver'
 end
-
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
