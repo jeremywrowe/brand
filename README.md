@@ -4,7 +4,7 @@ This is a pretty simple rails application that houses my (@jeremywrowe) experien
 
 This application was built with:
 
-Bulma (https://bulma.io/)
-FontAwesome (https://fontawesome.com/)
-Prawn (http://prawnpdf.org/api-docs/2.0/)
-Ruby on Rails (https://rubyonrails.org/)
+* Bulma (https://bulma.io/)
+* FontAwesome (https://fontawesome.com/)
+* Prawn (http://prawnpdf.org/api-docs/2.0/)
+* Ruby on Rails (https://rubyonrails.org/)
