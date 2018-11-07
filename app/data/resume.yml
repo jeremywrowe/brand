@@ -19,20 +19,23 @@ contact_locations:
     link: https://www.linkedin.com/in/jeremywrowe
     icon: fab fa-linkedin
     email: false
-  - heading: Twitter
-    link: https://twitter.com/jeremy_w_rowe
-    icon: fab fa-twitter
-    unicode: \uf099
-    email: false
 bio: >
   I am a developer that loves to help take products and teams to the next level. I've built applications of differing scales, languages, and domains.
   My favorite place to be is in uncharted territory. When presented with a challenging programming problem, I typically write automated tests to get
   a deeper understanding of the issue. I strive to keep applications simple, understandable, performant, and secure. I enjoy working as part of a
   team that collaborates to create innovative solutions to complex problems.
 experiences:
+  - company: Citrix
+    title: Staff Engineer
+    start_date: July 2018
+    description: >
+      I Build, maintain and architect the search platform for ShareFile at Citrix. I work with ElasticSearch, CSharp, and many other technologies.
+      The search infrastructure for ShareFile is at enterprise scale, and I am helping shape the future of searching content.
+      I also run the architecture group for the site, and mentor other developers.
   - company: Chargify
     title: Senior Software Developer
     start_date: October 2017
+    end_date: June 2018
     description: >
       Chargify is a recurring billing SaaS company which is built as a Ruby on Rails Application.
       I help develop and maintain the large legacy application. Day to day, I work with ElasticSearch, Ruby on Rails,
