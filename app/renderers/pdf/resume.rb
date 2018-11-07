@@ -62,26 +62,26 @@ module Pdf
       end
 
       move_down 60
-      text @resume_content.bio, size: 10
+      text @resume_content.bio, size: 8
 
       move_down 40
-      text 'Experience', size: 12, style: :bold
+      text 'Experience', size: 10, style: :bold
       move_down 10
 
       experiences = @resume_content.experiences
-      data = experiences.map { |ex| [make_table([[ex.company], [ex.title], [ex.duration]], cell_style: { border_widths: 0,  size: 10 }), ex.description] }
+      data = experiences.map { |ex| [make_table([[ex.company], [ex.title], [ex.duration]], cell_style: { border_widths: 0,  size: 8 }), ex.description] }
       table([['Info', 'Description'], *data], header: true, row_colors: ['F5F5F5', 'FFFFFF']) do
         cells.borders = []
-        style row(0), size: 10, font_style: :bold
+        style row(0), size: 8, font_style: :bold
         style rows(0..-1), padding_bottom: 10, padding_top: 10
-        style rows(1..-1), size: 10
+        style rows(1..-1), size: 8
         style column(0), padding_left: 0
         style column(-1), padding_right: 0
       end
     end
 
     def render_icon(contact, font_face)
-      text contact.heading, align: :center, size: 10
+      text contact.heading, align: :center, size: 8
       font(font_face) do
         text(
           "<link href='#{contact.link}'>#{ICONS[contact.icon]}</link>",
