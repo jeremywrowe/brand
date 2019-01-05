@@ -68,15 +68,23 @@ module Pdf
       text 'Experience', size: 10, style: :bold
       move_down 10
 
-      experiences = @resume_content.experiences
-      data = experiences.map { |ex| [make_table([[ex.company], [ex.title], [ex.duration]], cell_style: { border_widths: 0,  size: 8 }), ex.description] }
-      table([['Info', 'Description'], *data], header: true, row_colors: ['F5F5F5', 'FFFFFF']) do
+      experience_tables = make_experience_tables(@resume_content)
+      table([['Info', 'Description'], *experience_tables], header: true, row_colors: ['F5F5F5', 'FFFFFF']) do
         cells.borders = []
         style row(0), size: 8, font_style: :bold
         style rows(0..-1), padding_bottom: 10, padding_top: 10
         style rows(1..-1), size: 8
         style column(0), padding_left: 0
         style column(-1), padding_right: 0
+      end
+    end
+
+    def make_experience_tables(resume_content)
+      resume_content.experiences.map do |ex| 
+        [
+          make_table([[ex.company], ex.titles, ex.durations], cell_style: { border_widths: 0,  size: 8 }),
+          ex.description,
+        ]
       end
     end
 

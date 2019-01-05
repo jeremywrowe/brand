@@ -95,10 +95,14 @@
         <%= experience.company %>
       </div>
       <div class="column">
-        <%= experience.duration %>
+        <% experience.durations.each do |duration| %>
+          <%= content_tag :div, duration %>
+        <% end %>
       </div>
       <div class="column">
-        <%= experience.title %>
+        <% experience.titles.each do |title| %>
+          <%= content_tag :div, title %>
+        <% end %>
       </div>
       <div class="column is-half">
         <%= experience.description %>

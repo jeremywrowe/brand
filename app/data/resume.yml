@@ -23,52 +23,57 @@ bio: >
   I am a developer that loves to help take products and teams to the next level. I've built applications of differing scales, languages, and domains.
   My favorite place to be is in uncharted territory. When presented with a challenging programming problem, I typically write automated tests to get
   a deeper understanding of the issue. I strive to keep applications simple, understandable, performant, and secure. I enjoy working as part of a
-  team that collaborates to create innovative solutions to complex problems.
+  team that collaborates to create innovative solutions to complex problems. I am a Ruby on Rails developer at heart, but am happy to take on the challenge
+  of other languages. I try to learn a new one every year!
 experiences:
   - company: Citrix
-    title: Staff Engineer
-    start_date: July 2018
+    titles:
+      - Staff Engineer
+      - Manager of Product Development
+    start_dates:
+      - July 2018
+      - April 2015
+    end_dates:
+      -
+      - September 2017
     description: >
-      I Build, maintain and architect the search platform for ShareFile at Citrix. I work with ElasticSearch, CSharp, and many other technologies.
-      The search infrastructure for ShareFile is at enterprise scale, and I am helping shape the future of searching content.
-      I also run the architecture group for the site, and mentor other developers.
+      At Citrix I have maintained several products including RightSignature and ShareFile. Using a wide variety
+      of technologies including TypeScript, Ruby on Rails, and C Sharp. I currently lead, and maintain the search
+      platform for ShareFile. This involves optimizing queries, building robust scalable systems, and mentoring developers.
   - company: Chargify
-    title: Senior Software Developer
-    start_date: October 2017
-    end_date: June 2018
+    titles:
+      - Senior Software Developer
+    start_dates:
+      - November 2012
+      - October 2017
+    end_dates:
+      - April 2015
+      - June 2018
     description: >
-      Chargify is a recurring billing SaaS company which is built as a Ruby on Rails Application.
-      I help develop and maintain the large legacy application. Day to day, I work with ElasticSearch, Ruby on Rails,
-      Mysql, and ReactJS. I also architect, design and implement new core features. Lastly, I mentor and teach new developers
+      I developed and maintained the large legacy Rails application. Day to day, I worked with ElasticSearch, Ruby on Rails,
+      Mysql, and ReactJS. I also architected, designed and implemented new core features. Lastly, I mentored and taught new developers
       through pair programming and peer reviewal.
-  - company: Citrix
-    title: Manager of Product Development
-    start_date: April 2015
-    end_date: September 2017
-    description: >
-      At Citrix I developed and maintained several products including RightSignature and ShareFile using a variety
-      of technologies including TypeScript, Ruby on Rails, and C Sharp.
-      Within my first year at Citrix I was promoted from a Senior Developer to Manager of Product Development.
-      Through my role as a manager, I still remained hands on while mentoring developers.
-  - company: Chargify
-    title: Senior Software Developer
-    start_date: November 2012
-    end_date: April 2015
-    description: (described above)
   - company: Mutually Human Software
-    title: Software Developer
-    start_date: April 2012
-    end_date: November 2012
+    titles:
+      - Software Developer
+    start_dates:
+      - April 2012
+    end_dates:
+      - November 2012
     description: >
       Mutually Human Software is a consulting software company based in Grand Rapids, Michigan.
       During my time there, I developed software for multiple clients. I used everything from iOS,
       Ruby on Rails, to Java development.
   - company: Blue Medora, LLC
-    title: Director of Product Development
-    start_date: February 2009
-    end_date: September 2011
+    titles:
+      - Director of Product Development
+    start_dates:
+      - February 2009
+    end_dates:
+      - September 2011
     description: >
       Blue Medora is a small startup in Grand Rapids, Michigan that develops monitoring and platform connectors.
       During my time at Blue Medora, both the team and product line experienced rapid growth. I created
       frameworks for future connectors and mentored the growing team. Due to the wide range of products that Blue Medora
       targeted, I developed in several programming languages: C, C++, C Sharp, Java, and Ruby.
+
