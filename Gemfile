@@ -15,7 +15,7 @@ gem 'prawn'
 gem 'prawn-table'
 
 group :development, :test do
-  gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'pry'
 end
 
 group :development do
@@ -26,4 +26,5 @@ group :test do
   gem 'capybara', '>= 2.15', '< 4.0'
   gem 'chromedriver-helper'
   gem 'selenium-webdriver'
+  gem 'pdf-inspector', require: 'pdf/inspector'
 end
