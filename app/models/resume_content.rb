@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'yaml'
 
 class ResumeContent
@@ -8,7 +10,7 @@ class ResumeContent
 
   def experiences
     @experiences ||= @data.fetch('experiences', {})
-      .map { |experience| Experience.new(*experience.values_at('company', 'titles', 'start_dates', 'end_dates', 'description')) }
+                          .map { |experience| Experience.new(*experience.values_at('company', 'titles', 'start_dates', 'end_dates', 'description')) }
   end
 
   def avatar
@@ -17,7 +19,7 @@ class ResumeContent
 
   def contact_locations
     @contact_locations ||= @data.fetch('contact_locations', [])
-      .map { |contact_location| ContactLocation.new(contact_location) }
+                                .map { |contact_location| ContactLocation.new(contact_location) }
   end
 
   def bio

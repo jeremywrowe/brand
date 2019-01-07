@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ContactLocation
   attr_reader :heading, :link, :icon, :unicode
 

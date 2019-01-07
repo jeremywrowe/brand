@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'prawn'
 require 'prawn/table'
 
@@ -8,7 +10,7 @@ ICONS = {
   'fab fa-github' => "\uf09b",
   'fab fa-linkedin' => "\uf08c",
   'fab fa-twitter' => "\uf099"
-}
+}.freeze
 
 module Pdf
   class Resume
@@ -47,18 +49,19 @@ module Pdf
 
       email_contact = @resume_content.contact_locations.select(&:email?).first
       contact_locations = @resume_content.contact_locations.reject(&:email?)
-      service_offset = 3
+      service_offset = 2.2
+      service_offset_y = 0.1
 
       if email_contact
-        grid([0.5, service_offset], [0.5, service_offset]).bounding_box do
+        grid([service_offset_y, service_offset], [service_offset_y, service_offset]).bounding_box do
           render_icon(email_contact, :Fa)
         end
-        service_offset += 1
+        service_offset += 0.5
       end
 
       contact_locations.each_with_index do |contact, index|
-        offset = index + service_offset
-        grid([0.5, offset], [0.5, offset]).bounding_box do
+        offset = service_offset + (index / 2.0)
+        grid([service_offset_y, offset], [service_offset_y, offset]).bounding_box do
           render_icon(contact, :FaBrands)
         end
       end
@@ -71,7 +74,7 @@ module Pdf
       move_down 10
 
       experience_tables = make_experience_tables(@resume_content)
-      table([['Info', 'Description'], *experience_tables], header: true, row_colors: ['F5F5F5', 'FFFFFF']) do
+      table([%w[Info Description], *experience_tables], header: true, row_colors: %w[F5F5F5 FFFFFF]) do
         cells.borders = []
         style row(0), size: 8, font_style: :bold
         style rows(0..-1), padding_bottom: 10, padding_top: 10
@@ -82,20 +85,20 @@ module Pdf
     end
 
     def make_experience_tables(resume_content)
-      resume_content.experiences.map do |ex| 
+      resume_content.experiences.map do |ex|
         [
-          make_table([[ex.company], ex.titles, ex.durations], cell_style: { border_widths: 0,  size: 8 }),
-          ex.description,
+          make_table([[ex.company], ex.titles, ex.durations], cell_style: { border_widths: 0, size: 8 }),
+          ex.description
         ]
       end
     end
 
     def render_icon(contact, font_face)
-      text contact.heading, align: :center, size: 8
+      text contact.heading, size: 8, align: :center
       font(font_face) do
         text(
           "<link href='#{contact.link}'>#{ICONS[contact.icon]}</link>",
-          size: 30,
+          size: 10,
           inline_format: true,
           color: '3273DC',
           align: :center

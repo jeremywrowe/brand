@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Avatar
   attr_reader :url, :name, :blurbs
 

@@ -1,0 +1,29 @@
+AllCops:
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'bin/**/*'
+
+Security/Open:
+  Exclude:
+    - 'app/renderers/pdf/helpers/image.rb'
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - 'test/test_helper.rb'
+
+Style/Documentation:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Exclude:
+    - 'bin/bundle'
+
+Style/MixinUsage:
+  Exclude:
+    - 'bin/setup'
+    - 'bin/update'
+
+Metrics/LineLength:
+  Max: 200

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Experience
   attr_reader :company, :titles, :start_dates, :end_dates, :description
 

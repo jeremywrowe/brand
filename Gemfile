@@ -19,12 +19,12 @@ group :development, :test do
 end
 
 group :development do
+  gem 'rubocop'
   gem 'web-console', '>= 3.3.0'
 end
 
 group :test do
   gem 'capybara', '>= 2.15', '< 4.0'
-  gem 'chromedriver-helper'
-  gem 'selenium-webdriver'
   gem 'pdf-inspector', require: 'pdf/inspector'
+  gem 'selenium-webdriver'
 end

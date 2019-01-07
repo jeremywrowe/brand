@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 module Pdf
@@ -31,9 +33,8 @@ module Pdf
     private
 
     def assert_includes_match(contents, pattern)
-      entry = contents.detect { |entry| entry =~ %r[#{pattern}] }
-      assert entry.present?, "Did not find '#{pattern}' in #{contents.inspect}"
+      matching_entry = contents.detect { |entry| entry =~ /#{pattern}/ }
+      assert matching_entry.present?, "Did not find '#{pattern}' in #{contents.inspect}"
     end
   end
 end
-
