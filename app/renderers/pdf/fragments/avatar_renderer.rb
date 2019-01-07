@@ -37,7 +37,6 @@ module Pdf
       def render_avatar_blurb(avatar)
         grid([0.1, 1.15], [2, 2]).bounding_box do
           text avatar.name, style: :bold
-          text ' '
           avatar.blurbs.each do |blurb|
             text blurb, size: 8
           end

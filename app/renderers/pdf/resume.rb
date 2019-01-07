@@ -36,6 +36,7 @@ module Pdf
 
     def generate_content
       setup_fonts
+      default_leading 5
 
       repeat(:all) do
         bounding_box([0, bounds.bottom - 15], width: bounds.right, height: 10) do
