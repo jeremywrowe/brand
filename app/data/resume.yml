@@ -41,6 +41,14 @@ experiences:
       At Citrix I have maintained several products including RightSignature and ShareFile. Using a wide variety
       of technologies including TypeScript, Ruby on Rails, and C Sharp. I currently lead, and maintain the search
       platform for ShareFile. This involves optimizing queries, building robust scalable systems, and mentoring developers.
+    technologies:
+      - ruby
+      - rails
+      - react
+      - dotnet
+      - docker
+      - postgresql
+      - javascript
   - company: Chargify
     titles:
       - Senior Software Developer
@@ -54,6 +62,15 @@ experiences:
       I developed and maintained the large legacy Rails application. Day to day, I worked with ElasticSearch, Ruby on Rails,
       Mysql, and ReactJS. I also architected, designed and implemented new core features. Lastly, I mentored and taught new developers
       through pair programming and peer reviewal.
+    technologies:
+      - ruby
+      - rails
+      - cucumber
+      - javascript
+      - react
+      - dotnet
+      - docker
+      - mysql
   - company: Mutually Human Software
     titles:
       - Software Developer
@@ -65,6 +82,13 @@ experiences:
       Mutually Human Software is a consulting software company based in Grand Rapids, Michigan.
       During my time there, I developed software for multiple clients. I used everything from iOS,
       Ruby on Rails, to Java development.
+    technologies:
+      - ruby
+      - rails
+      - cucumber
+      - javascript
+      - postgresql
+      - mysql
   - company: Blue Medora, LLC
     titles:
       - Director of Product Development
@@ -77,4 +101,14 @@ experiences:
       During my time at Blue Medora, both the team and product line experienced rapid growth. I created
       frameworks for future connectors and mentored the growing team. Due to the wide range of products that Blue Medora
       targeted, I developed in several programming languages: C, C++, C Sharp, Java, and Ruby.
+    technologies:
+      - ruby
+      - rails
+      - cucumber
+      - c
+      - cplusplus
+      - java
+      - javascript
+      - mysql
+      - oracle
 

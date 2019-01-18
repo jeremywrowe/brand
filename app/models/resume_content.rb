@@ -10,7 +10,7 @@ class ResumeContent
 
   def experiences
     @experiences ||= @data.fetch('experiences', {})
-                          .map { |experience| Experience.new(*experience.values_at('company', 'titles', 'start_dates', 'end_dates', 'description')) }
+                          .map { |experience| Experience.new(*experience.values_at('company', 'titles', 'start_dates', 'end_dates', 'description', 'technologies')) }
   end
 
   def avatar

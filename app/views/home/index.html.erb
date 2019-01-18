@@ -100,7 +100,15 @@
         <% end %>
       </div>
       <div class="column is-half">
-        <%= experience.description %>
+        <div>
+          <%= experience.description %>
+        </div>
+        <br />
+        <div class="tags">
+          <% experience.technologies.each do |technology| %>
+            <%= tech_tag(key: technology) %>
+          <% end %>
+        </div>
       </div>
     </div>
   <% end %>

@@ -1,14 +1,15 @@
 # frozen_string_literal: true
 
 class Experience
-  attr_reader :company, :titles, :start_dates, :end_dates, :description
+  attr_reader :company, :titles, :start_dates, :end_dates, :description, :technologies
 
-  def initialize(company, titles, start_dates, end_dates, description)
+  def initialize(company, titles, start_dates, end_dates, description, technologies)
     @company = company
     @titles = Array(titles)
     @start_dates = Array(start_dates)
     @end_dates = Array(end_dates)
     @description = description
+    @technologies = Array(technologies)
   end
 
   def durations
