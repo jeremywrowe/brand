@@ -4,6 +4,7 @@ require 'prawn'
 require 'prawn/table'
 
 require_relative 'fragments/avatar_renderer'
+require_relative 'fragments/technology_renderer'
 
 ICONS = {
   'fas fa-at' => "\uf0e0",
@@ -17,6 +18,7 @@ module Pdf
     include ::Prawn::View
     include ::Pdf::Helpers::Fonts
     include ::Pdf::Fragments::AvatarRenderer
+    include ::Pdf::Fragments::TechnologyRenderer
 
     def initialize(resume_content)
       @resume_content = resume_content
@@ -48,6 +50,7 @@ module Pdf
 
       render_avatar(@resume_content.avatar)
 
+      render_technology
       email_contact = @resume_content.contact_locations.select(&:email?).first
       contact_locations = @resume_content.contact_locations.reject(&:email?)
       service_offset = 2.2

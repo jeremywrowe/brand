@@ -99,8 +99,7 @@ experiences:
     description: >
       Blue Medora is a small startup in Grand Rapids, Michigan that develops monitoring and platform connectors.
       During my time at Blue Medora, both the team and product line experienced rapid growth. I created
-      frameworks for future connectors and mentored the growing team. Due to the wide range of products that Blue Medora
-      targeted, I developed in several programming languages: C, C++, C Sharp, Java, and Ruby.
+      frameworks for future connectors and mentored the growing team.
     technologies:
       - ruby
       - rails
