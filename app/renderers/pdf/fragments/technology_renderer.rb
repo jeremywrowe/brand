@@ -6,7 +6,6 @@ module Pdf
   module Fragments
     module TechnologyRenderer
       include Prawn::View
-      include ::Pdf::Helpers::DeviconMapping
 
       def render_technologies(technologies)
         technologies.map do |technology|
