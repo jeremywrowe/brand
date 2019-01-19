@@ -5,6 +5,7 @@ module Pdf
     module Fonts
       FONT_BASE_PATH = Rails.root.join('vendor', 'assets', 'fonts').freeze
       FONTS = {
+        'Devicon' => { normal: File.join(FONT_BASE_PATH, 'devicon.ttf') },
         'Fa' => { normal: File.join(FONT_BASE_PATH, 'fa-regular.ttf') },
         'FaBrands' => { normal: File.join(FONT_BASE_PATH, 'fa-brands.ttf') },
         'OpenSans' => {

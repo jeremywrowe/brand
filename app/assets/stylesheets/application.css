@@ -151,6 +151,10 @@
   align-items: center;
 }
 
+.tag {
+  border: 1px solid #EEE;
+}
+
 #github-section {
   height: 450px;
 }

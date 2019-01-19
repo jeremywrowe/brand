@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Experience
-  attr_reader :company, :titles, :start_dates, :end_dates, :description, :technologies
+  attr_reader :company, :titles, :start_dates, :end_dates, :description
 
   def initialize(company, titles, start_dates, end_dates, description, technologies)
     @company = company
@@ -9,7 +9,7 @@ class Experience
     @start_dates = Array(start_dates)
     @end_dates = Array(end_dates)
     @description = description
-    @technologies = Array(technologies)
+    @raw_technologies = Array(technologies)
   end
 
   def durations
@@ -20,5 +20,9 @@ class Experience
 
   def dates
     @dates ||= start_dates.zip(end_dates)
+  end
+
+  def technologies
+    @technologies ||= @raw_technologies.map { |name| Technology.lookup(name) }
   end
 end

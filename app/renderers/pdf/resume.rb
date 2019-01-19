@@ -4,6 +4,7 @@ require 'prawn'
 require 'prawn/table'
 
 require_relative 'fragments/avatar_renderer'
+require_relative 'fragments/technology_renderer'
 
 ICONS = {
   'fas fa-at' => "\uf0e0",
@@ -17,6 +18,7 @@ module Pdf
     include ::Prawn::View
     include ::Pdf::Helpers::Fonts
     include ::Pdf::Fragments::AvatarRenderer
+    include ::Pdf::Fragments::TechnologyRenderer
 
     def initialize(resume_content)
       @resume_content = resume_content
@@ -75,7 +77,8 @@ module Pdf
       move_down 10
 
       experience_tables = make_experience_tables(@resume_content)
-      table([%w[Info Description], *experience_tables], header: true, row_colors: %w[F5F5F5 FFFFFF]) do
+
+      table([%w[Info Description], *experience_tables], header: true, row_colors: %w[F5F5F5 FFFFFF], cell_style: { inline_format: true}) do
         cells.borders = []
         style row(0), size: 8, font_style: :bold
         style rows(0..-1), padding_bottom: 10, padding_top: 10
@@ -89,7 +92,7 @@ module Pdf
       resume_content.experiences.map do |ex|
         [
           make_table([[ex.company], ex.titles, ex.durations], cell_style: { border_widths: 0, size: 8 }),
-          ex.description
+          "#{ex.description} <br /> #{render_technologies(ex.technologies)}"
         ]
       end
     end
