@@ -78,7 +78,7 @@ module Pdf
 
       experience_tables = make_experience_tables(@resume_content)
 
-      table([%w[Info Description], *experience_tables], header: true, row_colors: %w[F5F5F5 FFFFFF], cell_style: { inline_format: true}) do
+      table([%w[Info Description], *experience_tables], header: true, row_colors: %w[F5F5F5 FFFFFF], cell_style: { inline_format: true }) do
         cells.borders = []
         style row(0), size: 8, font_style: :bold
         style rows(0..-1), padding_bottom: 10, padding_top: 10

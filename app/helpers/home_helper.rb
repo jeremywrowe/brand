@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module HomeHelper
   def tech_tag(technology)
     content_tag(:span, class: [:tag, "is-#{technology.level}"]) do

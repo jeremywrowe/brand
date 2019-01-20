@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class Devicon
-  OUTPUT_PATH = 'devicon_mapping.rb'.freeze
+  OUTPUT_PATH = 'devicon_mapping.rb'
   CSS_PATH = File.expand_path('../vendor/assets/fonts/devicon.css', __dir__).freeze
   ICON_START_PATTERN = /\.devicon-(?<value>.*?):before\s*(?<ending>[,|{])/.freeze
   CONTENT_PATTERN = /\s*content:\s*"\\e(?<value>\w+)/.freeze
@@ -18,15 +20,14 @@ class Devicon
       finalize_entry if state == :end
     end
 
-
     File.open(OUTPUT_PATH, 'w') do |file|
-      file.puts "module DeviconMapping"
-      file.puts "  DEVICON_MAPPING = {"
+      file.puts 'module DeviconMapping'
+      file.puts '  DEVICON_MAPPING = {'
       Hash[@entries.flat_map(&:to_a)].each do |key, value|
-        file.puts %[    "#{key}" => "\\ue#{value}",]
+        file.puts %(    "#{key}" => "\\ue#{value}",)
       end
-      file.puts "  }.freeze"
-      file.puts "end"
+      file.puts '  }.freeze'
+      file.puts 'end'
     end
   end
 
@@ -63,9 +64,7 @@ class Devicon
       @names << value
     end
 
-    def content=(value)
-      @content = value
-    end
+    attr_writer :content
 
     def to_a(*)
       names.map { |name| [name, @content] }
@@ -74,4 +73,3 @@ class Devicon
 end
 
 Devicon.parse
-

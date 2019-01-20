@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Technology
   include DeviconMapping
   attr_reader :display, :level, :colored
