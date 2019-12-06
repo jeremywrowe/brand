@@ -3,12 +3,12 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.0'
+ruby '2.6.5'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'pg', '>= 0.18', '< 2.0'
-gem 'puma', '~> 3.11'
-gem 'rails', '~> 6.0.0.beta1'
+gem 'puma'
+gem 'rails'
 gem 'sass-rails', '~> 5.0'
 
 gem 'prawn'
