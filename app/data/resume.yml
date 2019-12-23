@@ -37,13 +37,15 @@ experiences:
     description: >
       ...
     technologies:
+      - docker
       - elixir
-      - ruby
+      - java
+      - javascript
+      - postgresql
       - rails
       - react
-      - docker
-      - postgresql
-      - javascript
+      - ruby
+      - swift
   - company: Citrix
     titles:
       - Staff Engineer

@@ -46,6 +46,7 @@ class Technology
   }.freeze
 
   KNOWN_ICONS = {
+    swift: Technology.new('swift', 'Swift', 'swift-plain', 'white', true),
     elixir: Technology.new('elixir', 'Elixir', 'erlang-plain', 'dark', true),
     c: Technology.new('c', 'C', 'c-plain', 'info'),
     cucumber: Technology.new('cucumber', 'Cucumber', 'cucumber-plain', 'success'),
