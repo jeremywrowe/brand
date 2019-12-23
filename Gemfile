@@ -8,7 +8,7 @@ ruby '2.6.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma'
-gem 'rails'
+gem 'rails', '~> 6.0'
 gem 'sass-rails', '~> 5.0'
 
 gem 'prawn'

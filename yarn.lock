@@ -3,9 +3,9 @@
 
 
 add-subtract-date@^1.0.5:
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/add-subtract-date/-/add-subtract-date-1.0.13.tgz#1b602e6c740886f4cd5ce147ca90210ce08a64bb"
-  integrity sha512-vbAsWMVidKHi9Ji8wcpk4ftJBNaascKCxLiV3STxWwPVXkj+oaOUA81RN0lvDhEm0ynUl6C7UUhKGiruWIp7ZQ==
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/add-subtract-date/-/add-subtract-date-1.0.14.tgz#c2c2e707fa93c77ba3f70a010a6085eb13063d6f"
+  integrity sha512-e070xJdKBEEdAgCJJm1nBSdGv4Y6C2LXP9PYHBUJPV/3eUkZ46bnnkzejmXmTFYyIsiouLPt26yGgsHZL7WDvg==
 
 days@^1.0.1:
   version "1.1.1"
@@ -13,22 +13,22 @@ days@^1.0.1:
   integrity sha512-vzeIwVsEIyA35GH4+mPd4hjVDNI87wYANyZFs0BHjBr5kIBH5zEl7LfD6Wr4SFZca4D3CU9IH1w4DuZLlXzKRw==
 
 elly@^1.0.0:
-  version "1.1.9"
-  resolved "https://registry.yarnpkg.com/elly/-/elly-1.1.9.tgz#7839fd9ba223ef67e97ce1a62880d5e289e4d59a"
-  integrity sha512-wuSdIJ9pXlq7mvhvVp60GIsxZ3sLzg7VEEiJyDTpOsnauVnuSdhVSBMf6F0IiQrZG5np3Uvgcvi5QexLfNOSWw==
+  version "1.1.10"
+  resolved "https://registry.yarnpkg.com/elly/-/elly-1.1.10.tgz#15f3e43c81327ea927802a09508e60c712b81c9b"
+  integrity sha512-CXlhCGIzVjX1SLPttmq2fo7wsOlfPMsxqf8rIbpFSkNWC+U8Nuldo6rG6oeFiBY9+8e7YcizwDnyK72APWH+dQ==
   dependencies:
     iterate-object "^1.3.2"
     sliced "^1.0.1"
 
 fillo@^1.0.0:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/fillo/-/fillo-1.0.11.tgz#6ac11437ff899d29979291e8f71f4822c0c4ccda"
-  integrity sha512-3YWc82rxHEJUCMbHXxYwnu6X4zmOKjqVLtU0NsTOaPFj1lF8YaqodE+efvEPyq7kL5W8kT91OfO6KU1HVwBDzQ==
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/fillo/-/fillo-1.0.12.tgz#27a0f2793fcbb08dbd6ddb6568deb53896511aea"
+  integrity sha512-WjV09RN7NEp1EazSNKJVZCVHeWYj4MNyb4HX1BAyrW4j0OW2UPJukP4SUkJt9Nj7gWgyD6avK0mH5bjwOZFViw==
 
 formatoid@^1.0.3:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/formatoid/-/formatoid-1.2.2.tgz#4b4041a42c555d4a296f7ffe30c83eb565b389de"
-  integrity sha512-3pt8YwLgc5FSJdn+yaNF/3Mzqvp6keq0cEPQbZECDY1Jwg29fs82GPIE34KkB0I4Zgm9ukfYJH7Kw//TCaOA/g==
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/formatoid/-/formatoid-1.2.3.tgz#f9c1628fecbdfb56e422e5000cd2e81c1710589f"
+  integrity sha512-CkI0aK01nKhHoFZByDKw/yrNPy+g56DNIEmlq0Q67grdR/LLV8Orc9gsTGVP7XufM3bZg8iuD5UsVfkOdJo2yg==
   dependencies:
     days "^1.0.1"
     fillo "^1.0.0"
@@ -36,21 +36,21 @@ formatoid@^1.0.3:
     parse-it "^1.0.0"
 
 github-calendar-legend@^1.0.0:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/github-calendar-legend/-/github-calendar-legend-1.0.9.tgz#1323fad1b9e3b90dd1f5c045e397dd29918a73a0"
-  integrity sha512-8qqd8+0mbhFOHrd3NNp1gzS/OI0wlEVhi72FtgXGrKMnUOAvMuKh+mclYIg0XAVpQx5ey87vR4uD+paNxRFKCA==
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/github-calendar-legend/-/github-calendar-legend-1.0.10.tgz#bbfad7332f155ad482abb61d4c6122b0cd13e986"
+  integrity sha512-dDfX2Hvl98mSNbM9jRsZoZ0STb/AJcaf8ofRGXpH2oHtiQ73IlL8LFzOUzp49xSTFf0XYBs4DCXEhgbh+Fir2A==
 
 github-calendar-parser@^1.1.3:
-  version "1.1.9"
-  resolved "https://registry.yarnpkg.com/github-calendar-parser/-/github-calendar-parser-1.1.9.tgz#f93ed8e32ef0f0c669ed186c2d2f86ea1e503602"
-  integrity sha512-e9EdUEQWCcfT3Z6mCUPugJ1t7tTdhBlmA1d8PKoZjiukFnmg7HpyUZWEWh8QvOewAyFrdmbpApwcHZQGiBqGzg==
+  version "1.1.10"
+  resolved "https://registry.yarnpkg.com/github-calendar-parser/-/github-calendar-parser-1.1.10.tgz#25285db5dd8e15a1f23e2fd71c3f809d240ccb21"
+  integrity sha512-muDJpHio2ATZ9WXqTjyrFitLxFlJyZTy/c0EtiNhOwPzUBW4zr3mnX1qoiZM8DkgbLAyZY5CoEno3GEXPDSMPQ==
   dependencies:
     github-calendar-legend "^1.0.0"
 
 github-calendar@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/github-calendar/-/github-calendar-1.2.1.tgz#58fdf47cdd2e89af8dbc591bc0c6604334c27bbc"
-  integrity sha512-+dwCaO7IngKdNdPTOmug37OPBABCBf38GvHpdIXYc4ajxWFvOSnGwBdPw+gEjkxq9e6Mdd2wQ6fJZN51tO+G0w==
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/github-calendar/-/github-calendar-1.3.4.tgz#ed77997eae468f35ea331077169fd9a35d6a8407"
+  integrity sha512-tHmBHVnuOhzKT/e4BohiqxSE6/0OHDAy4VnEfu0PLDpxmhPiSucfyYJ6yLQZy+zruPqFXlnzu45QywJrWXnExg==
   dependencies:
     add-subtract-date "^1.0.5"
     elly "^1.0.0"
@@ -58,9 +58,9 @@ github-calendar@^1.2.1:
     github-calendar-parser "^1.1.3"
 
 iterate-object@^1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/iterate-object/-/iterate-object-1.3.2.tgz#24ec15affa5d0039e8839695a21c2cae1f45b66b"
-  integrity sha1-JOwVr/pdADnog5aVohwsrh9Ftms=
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/iterate-object/-/iterate-object-1.3.3.tgz#c58e60f7f0caefa2d382027a484b215988a7a296"
+  integrity sha512-DximWbkke36cnrSfNJv6bgcB2QOMV9PRD2FiowwzCoMsh8RupFLdbNIzWe+cVDWT+NIMNJgGlB1dGxP6kpzGtA==
 
 months@^1.0.0:
   version "1.2.0"
@@ -68,16 +68,16 @@ months@^1.0.0:
   integrity sha512-zFM7hUpziSYGk2DNObYGWgHdRRxAOgjl8CC1Rbl50p/q0rGDsREfk0nbxxmSIquVi/lEAuUY8nwbwkZ8biNCOQ==
 
 parse-it@^1.0.0:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/parse-it/-/parse-it-1.0.8.tgz#e9a53bde18c8049e7bb415b73e16d3292df8eae7"
-  integrity sha1-6aU73hjIBJ57tBW3PhbTKS346uc=
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/parse-it/-/parse-it-1.0.9.tgz#09c9f52734de2cba309d0e083de305c912f294f3"
+  integrity sha512-8KW9XwW5+DFsvkkSXLZw7AGormnQ+/unnqmTPq7uoiAJNaeLo0T78zT/Ootc0HrdEgVvxM4+mOCRLKJOVtkogQ==
   dependencies:
     regex-escape "^3.4.0"
 
 regex-escape@^3.4.0:
-  version "3.4.8"
-  resolved "https://registry.yarnpkg.com/regex-escape/-/regex-escape-3.4.8.tgz#d819372b24fb2659174196ecbecfa69d8612f30d"
-  integrity sha512-DG0VFPTDwfl+XsuVaM/0RmGJvCpZNB9UG/limzbev50XQ44G4mbOG+0Eh5M7Al9JB68NbP7YeY1KhDzpnX7qSw==
+  version "3.4.9"
+  resolved "https://registry.yarnpkg.com/regex-escape/-/regex-escape-3.4.9.tgz#407b413562e2373d56994ff213e693658ea4f8f7"
+  integrity sha512-Cv9rjwyQwVhn3L097ysanWsEElurmxDj6Cc4Ut23z7e6hzRbrNvF3Le7yAciMfuzyb0sZwSr0ZHunMNCIoy2/g==
 
 sliced@^1.0.1:
   version "1.0.1"
