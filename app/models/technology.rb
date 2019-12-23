@@ -42,10 +42,12 @@ class Technology
     'c' => '209CEE',
     'cplusplus' => 'FF3860',
     'postgresql' => '209CEE',
-    'docker' => '222222'
+    'docker' => '222222',
   }.freeze
 
   KNOWN_ICONS = {
+    swift: Technology.new('swift', 'Swift', 'swift-plain', 'white', true),
+    elixir: Technology.new('elixir', 'Elixir', 'erlang-plain', 'dark', true),
     c: Technology.new('c', 'C', 'c-plain', 'info'),
     cucumber: Technology.new('cucumber', 'Cucumber', 'cucumber-plain', 'success'),
     cplusplus: Technology.new('cplusplus', 'C++', 'cplusplus-plain', 'danger'),
@@ -54,7 +56,7 @@ class Technology
     dotnet: Technology.new('dotnet', '.net', 'dot-net-plain-wordmark', 'white', true),
     java: Technology.new('java', 'Java', 'java-plain', 'white', true),
     javascript: Technology.new('javascript', 'Javascript', 'javascript-plain', 'warning'),
-    mysql: Technology.new('mysql', 'MySQL', 'mysql-plain', 'info'),
+    mysql: Technology.new('mysql', 'MySQL', 'mysql-plain', 'dark'),
     oracle: Technology.new('oracle', 'Oracle', 'oracle-original', 'white', true),
     postgresql: Technology.new('postgresql', 'PostgreSQL', 'postgresql-plain', 'info'),
     rails: Technology.new('rails', 'Rails', 'rails-plain', 'white', true),

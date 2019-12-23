@@ -63,7 +63,7 @@
       </div>
       <div class="column">
         <% experience.durations.each do |duration| %>
-          <%= content_tag :div, duration %>
+          <%= content_tag :div, duration.include?('Present') ? "<i>#{duration}</i>".html_safe : duration %>
         <% end %>
       </div>
       <div class="column">
