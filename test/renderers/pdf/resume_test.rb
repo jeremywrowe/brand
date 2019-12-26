@@ -7,22 +7,25 @@ module Pdf
     setup do
       @resume = Pdf::Resume.new(ResumeContent.new)
       @inspector = PDF::Inspector::Page.analyze(@resume.render)
-      @contents = Array(@inspector.pages.first&.fetch(:strings))
+      @page_count = @inspector.pages.count
+      @contents = Array(@inspector.pages.first(@page_count).flat_map { |page| page.fetch(:strings) } )
+      @resume_yml = YAML.load_file(Rails.root.join("app", "data", "resume.yml"))
     end
 
     def test_render_page_count
-      assert_equal @inspector.pages.count, 1, 'Should have had one page for the pdf and did not'
+      assert_equal @page_count, 2, 'Should have had two pages for the pdf and did not'
     end
 
     def test_render_companies
-      ['Citrix', 'Chargify', 'Mutually Human Software', 'Blue Medora, LLC'].each do |company|
+      @resume_yml["experiences"].map { |job| job["company"] }.each do |company|
         assert_includes @contents, company, "Did not include #{company} company in contents"
       end
     end
 
     def test_render_descriptions
-      ['At Citrix I have maintained', 'I developed and maintained', 'Mutually Human Software is', 'Blue Medora is'].each do |description|
-        assert_includes_match(@contents, description)
+      document_contents = @contents.join(" ")
+      @resume_yml["experiences"].map { |job| job["description"] }.each do |description|
+        assert_includes_match(document_contents.strip, description.strip)
       end
     end
 
@@ -33,7 +36,7 @@ module Pdf
     private
 
     def assert_includes_match(contents, pattern)
-      matching_entry = contents.detect { |entry| entry =~ /#{pattern}/ }
+      matching_entry = contents.include?(pattern)
       assert matching_entry.present?, "Did not find '#{pattern}' in #{contents.inspect}"
     end
   end

@@ -8,10 +8,6 @@ avatar:
     - Avid Mountain Biker
     -  Wannabe Baker
 contact_locations:
-  - heading: E-Mail
-    link: mailto:jeremy.w.rowe@gmail.com
-    icon: fas fa-at
-    email: true
   - heading: Github
     link: https://github.com/jeremywrowe
     icon: fab fa-github
@@ -24,8 +20,8 @@ bio: >
   I am a developer that loves to help take products and teams to the next level. I've built applications of differing scales, languages, and domains.
   My favorite place to be is in uncharted territory. When presented with a challenging programming problem, I typically write automated tests to get
   a deeper understanding of the issue. I strive to keep applications simple, understandable, performant, and secure. I enjoy working as part of a
-  team that collaborates to create innovative solutions to complex problems. I am a Ruby on Rails developer at heart, but am happy to take on the challenge
-  of other languages. I try to learn a new one every year!
+  team that collaborates to create innovative solutions to complex problems. I am a Ruby, Elixir, and JavaScript developer at heart, but am happy to take
+  on the challenge of other languages. I try to learn a new programming language every year, Rust is this years - It's been pretty fun so far.
 experiences:
   - company: Spreedly
     titles:
@@ -35,7 +31,14 @@ experiences:
     end_dates:
       - 
     description: >
-      ...
+      At Spreedly I am a tech lead on Connect Squad, Spreedly's core offering team. As a tech lead
+      I mentor developers, help shape work, negotiate priorities with other stakeholders, and define
+      architectural paths. The most recent project that I've worked on at Spreedly hash been integrating 
+      3D Secure 2.x (An asynchronous, client rich payments standard) into the Spreedly platform. While
+      working on the project I wrote an Android, iOS and JavaScript clients. I wrote a payment gateway agnositic
+      Rails engine to improve developer efficiency and stadardize integrations. I've also changed the way 
+      that Spreedly does code review, by standardizing pull request process which focuses on customer empathy and 
+      internal tooling.
     technologies:
       - docker
       - elixir
@@ -57,17 +60,20 @@ experiences:
       - February 2019
       - September 2017
     description: >
-      At Citrix I have maintained several products including RightSignature and ShareFile. Using a wide variety
-      of technologies including TypeScript, Ruby on Rails, and C Sharp. I currently lead, and maintain the search
+      At Citrix I maintained several products including RightSignature and ShareFile. Using a wide variety
+      of technologies including TypeScript, Ruby on Rails, and C Sharp. Most recently I lead, and maintain the search
       platform for ShareFile. This involves optimizing queries, building robust scalable systems, and mentoring developers.
+      The search platform powered one of Citrix most important initiatives and spanned across a suite of products. The search platform
+      was a large legacy ElasticSearch system that was modernized. My core function while leading the search team was to extract
+      a search service that could facilitate current and future needs.
     technologies:
-      - ruby
+      - docker
+      - dotnet
+      - javascript
+      - postgresql
       - rails
       - react
-      - dotnet
-      - docker
-      - postgresql
-      - javascript
+      - ruby
   - company: Chargify
     titles:
       - Senior Software Developer
@@ -82,14 +88,14 @@ experiences:
       Mysql, and ReactJS. I also architected, designed and implemented new core features. Lastly, I mentored and taught new developers
       through pair programming and peer reviewal.
     technologies:
-      - ruby
-      - rails
       - cucumber
-      - javascript
-      - react
-      - dotnet
       - docker
+      - dotnet
+      - javascript
       - mysql
+      - rails
+      - react
+      - ruby
   - company: Mutually Human Software
     titles:
       - Software Developer
@@ -102,12 +108,13 @@ experiences:
       During my time there, I developed software for multiple clients. I used everything from iOS,
       Ruby on Rails, to Java development.
     technologies:
-      - ruby
-      - rails
       - cucumber
+      - java
       - javascript
-      - postgresql
       - mysql
+      - postgresql
+      - rails
+      - ruby
   - company: Blue Medora, LLC
     titles:
       - Director of Product Development
@@ -120,13 +127,13 @@ experiences:
       During my time at Blue Medora, both the team and product line experienced rapid growth. I created
       frameworks for future connectors and mentored the growing team.
     technologies:
-      - ruby
-      - rails
-      - cucumber
       - c
       - cplusplus
+      - cucumber
       - java
       - javascript
       - mysql
       - oracle
+      - rails
+      - ruby
 
