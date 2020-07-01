@@ -6,7 +6,7 @@ avatar:
   blurbs:
     - Software Developer
     - Avid Mountain Biker
-    -  Wannabe Baker
+    - Hobbiest woodworker
 contact_locations:
   - heading: Github
     link: https://github.com/jeremywrowe
@@ -25,7 +25,7 @@ bio: >
 experiences:
   - company: Spreedly
     titles:
-      - Staff Engineer & Tech Lead
+      - Staff Engineer - Architecture Team
     start_dates:
       - February 2019
     end_dates:

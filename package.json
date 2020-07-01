@@ -1,7 +1,4 @@
 {
   "name": "resume",
-  "private": true,
-  "dependencies": {
-    "github-calendar": "^1.2.1"
-  }
+  "private": true
 }

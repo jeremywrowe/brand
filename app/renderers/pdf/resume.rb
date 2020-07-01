@@ -78,23 +78,26 @@ module Pdf
 
       experience_tables = make_experience_tables(@resume_content)
 
-      table([%w[Info Description], *experience_tables], header: true, row_colors: %w[F5F5F5 FFFFFF], cell_style: { inline_format: true }) do
+      table(experience_tables, header: false) do
         cells.borders = []
-        style row(0), size: 8, font_style: :bold
-        style rows(0..-1), padding_bottom: 10, padding_top: 10
+        style row(0), size: 8
         style rows(1..-1), size: 8
-        style column(0), padding_left: 0
-        style column(-1), padding_right: 0
+        style column(0), padding_left: 5
+        style column(-1), padding_right: 5
       end
     end
 
     def make_experience_tables(resume_content)
-      resume_content.experiences.map do |ex|
-        [
-          make_table([[ex.company], ex.titles, ex.durations], cell_style: { border_widths: 0, size: 8 }),
-          "#{ex.description} <br /> #{render_technologies(ex.technologies)}"
-        ]
+      output = []
+      resume_content.experiences.each_with_index do |ex, index|
+        color = (index % 2).zero? ? 'F5F5F5' : 'FFFFFF'
+        durations = ex.durations.join(' / ')
+        titles = ex.titles.join(' / ')
+        output << [make_table([["<b>#{ex.company}</b>", titles, durations]], header: false, cell_style: { border_widths: 0, size: 8, padding_top: 30, inline_format: true }, width: 540, row_colors: [color])]
+        output << [make_table([[ex.description]], cell_style: { border_widths: 0, size: 8, padding_top: 10, padding_bottom: 10 }, width: 540, row_colors: [color])]
+        output << [make_table([[render_technologies(ex.technologies)]], cell_style: { border_widths: 0, size: 6, padding_bottom: 30, inline_format: true }, width: 540, row_colors: [color])]
       end
+      output
     end
 
     def render_icon(contact, font_face)
