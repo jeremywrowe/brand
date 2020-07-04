@@ -153,21 +153,5 @@
 
 .tag {
   border: 1px solid #EEE;
-}
-
-#github-section {
-  height: 450px;
-}
-
-@media screen and (max-width: 740px) {
-  #github-section {
-    zoom: 0.5;
-    -moz-transform: scale(0.5);
-    height: 600px;
-  }
-
-  .legend,
-  .contrib-footer {
-    display: none !important;
-  }
+  display: inline-block;
 }

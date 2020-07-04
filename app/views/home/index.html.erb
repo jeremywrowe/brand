@@ -1,82 +1,76 @@
 <section class="section">
-  <div class="container">
-    <nav class="level is-mobile is-hidden-desktop">
-      <div class="level-item has-text-centered bounceIn">
-        <%= render partial: "avatar", locals: { size: '64x64', avatar: @resume_content.avatar } %>
-      </div>
-    </nav>
-    <nav class="level is-mobile">
-      <div class="level-item has-text-centered is-hidden-touch bounceIn">
-        <%= render partial: "avatar", locals: { size: '128x128', avatar: @resume_content.avatar } %>
-      </div>
+<nav class="flex items-center justify-between">
+  <div class="bounceIn">
+    <%= render partial: "avatar", locals: { size: '128x128', avatar: @resume_content.avatar } %>
+  </div>
+
+  <% unless controller.formats.include? :pdf %>
+    <div class="flex items-center">
       <% @resume_content.contact_locations.each do |location| %>
-        <div class="level-item has-text-centered">
+        <div class="px-4 text-center">
           <div>
             <p class="heading"><%= location.heading %></p>
             <p class="title">
-              <a target="_blank" href="<%= location.link %>">
+              <a target="_blank" href="<%= location.link %>" class="hover:text-blue-400">
                 <i class="<%= location.icon %>" /></i>
               </a>
             </p>
           </div>
         </div>
       <% end %>
-    </nav>
-  </div>
-</section>
-
-<section class="hero is-small is-info has-text-weight-semibold">
-  <div class="hero-body">
-    <div class="container">
-      <div class="columns is-mobile">
-        <div class="column">
-          <p>
-            <br>
-            <%= @resume_content.bio %>
-          </p>
+        <div class="px-4 text-center border-l ml-4">
+          <div>
+            <p class="heading">Download</p>
+            <p class="title">
+            <%= link_to resume_path(format: :pdf), title: 'Download', class: 'hover:text-blue-400' do %>
+              <i class="far fa-file-pdf"></i>
+            <% end %>
+          </div>
         </div>
       </div>
     </div>
+  <% end %>
+</nav>
+</section>
+
+<section class="section">
+  <div class="p-4 py-10 font-bold bg-blue-500 rounded">
+    <p class="text-white"><%= @resume_content.bio %></p>
   </div>
 </section>
 
 <section class="section">
   <h1 class="title mb-6">Experience</h1>
   <% @resume_content.experiences.each_with_index do |experience, index| %>
-    <div class="columns is-multiline pt-2 <%= index.even? ? 'has-background-white-ter' : nil %>">
-      <div class="column has-text-weight-bold">
-        <%= experience.company %>
-      </div>
-      <div class="column">
-        <% experience.durations.each do |duration| %>
-          <%= content_tag :div, duration.include?('Present') ? "<i>#{duration}</i>".html_safe : duration %>
-        <% end %>
-      </div>
-      <div class="column">
-        <% experience.titles.each do |title| %>
-          <%= content_tag :div, title %>
-        <% end %>
-      </div>
-    </div>
-    <div class="columns is-multiline pb-2 mb-6 <%= index.even? ? 'has-background-white-ter' : nil %>">
-      <div class="column">
-        <div>
-          <%= experience.description %>
+    <div class="rounded border mb-12 px-4 bg-gray-100">
+      <div class="experience-info py-4">
+        <div class="experience-company font-bold">
+          <%= experience.company %>
         </div>
-        <br />
-        <div class="tags">
-          <% experience.technologies.each do |technology| %>
-            <%= tech_tag(technology) %>
-          <% end %>
+        <div class="experience-titles py-4 flex justify-between border-b">
+          <div class="font-bold pr-8">
+            <% experience.titles.each do |title| %>
+              <%= content_tag :div, title %>
+            <% end %>
+          </div>
+          <div>
+            <% experience.durations.each do |duration| %>
+              <%= content_tag :div, duration.include?('Present') ? "<i>#{duration}</i>".html_safe : duration %>
+            <% end %>
+          </div>
         </div>
       </div>
+      <div class="experience-description py-4">
+        <%= experience.description %>
+      </div>
+      <% unless controller.formats.include? :pdf %>
+          <div class="flex justify-center space-between border-t py-4">
+            <% experience.technologies.each do |technology| %>
+              <%= tech_tag(technology) %>
+            <% end %>
+        </div>
+      <% end %>
     </div>
   <% end %>
 </section>
 
-<section class="section">
-  <%= link_to resume_path(format: :pdf), class: 'button is-info is-medium is-pulled-right' do %>
-    <i class="far fa-file-pdf"></i>&nbsp;Download Resume
-  <% end %>
-  <br />
-</section>

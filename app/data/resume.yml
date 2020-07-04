@@ -6,7 +6,7 @@ avatar:
   blurbs:
     - Software Developer
     - Avid Mountain Biker
-    - Hobbiest woodworker
+    - Hobbiest Woodworker
 contact_locations:
   - heading: Github
     link: https://github.com/jeremywrowe
@@ -39,13 +39,10 @@ experiences:
     technologies:
       - docker
       - elixir
-      - java
       - javascript
       - postgresql
       - rails
-      - react
       - ruby
-      - swift
   - company: Citrix
     titles:
       - Staff Engineer
@@ -130,7 +127,6 @@ experiences:
       - java
       - javascript
       - mysql
-      - oracle
       - rails
       - ruby
 

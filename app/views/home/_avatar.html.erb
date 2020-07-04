@@ -1,9 +1,15 @@
 <article class="media has-centered-items">
-  <div class="media-left">
-    <figure class="image is-<%= size %>">
-      <%= image_tag avatar.url, alt: avatar.name, class: 'round-image' %>
-    </figure>
-  </div>
+  <% unless controller.formats.include? :pdf %>
+    <div class="media-left">
+      <figure class="w-40 h-40 rounded-full mr-4 is-<%= size %>">
+        <% if controller.formats.include? :pdf %>
+          <%= image_tag avatar.url, alt: avatar.name, class: 'is-rounded' %>
+        <% else %>
+          <%= image_tag avatar.url, alt: avatar.name, class: 'round-image' %>
+        <% end %>
+      </figure>
+    </div>
+  <% end %>
   <div class="media-content">
     <div class="content">
       <p>

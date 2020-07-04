@@ -11,8 +11,8 @@ gem 'puma'
 gem 'rails', '~> 6.0'
 gem 'sass-rails', '~> 6.0'
 
-gem 'prawn'
-gem 'prawn-table'
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
 
 group :development, :test do
   gem 'pry'

@@ -2,7 +2,7 @@
 
 class Technology
   include DeviconMapping
-  attr_reader :display, :level, :colored
+  attr_reader :display, :level, :colored, :name
 
   def initialize(name, display, icon, level, colored = false)
     @name = name
@@ -47,17 +47,16 @@ class Technology
 
   KNOWN_ICONS = {
     swift: Technology.new('swift', 'Swift', 'swift-plain', 'white', true),
-    elixir: Technology.new('elixir', 'Elixir', 'erlang-plain', 'dark', true),
+    elixir: Technology.new('erlang', 'Elixir', 'erlang-plain', 'dark', true),
     c: Technology.new('c', 'C', 'c-plain', 'info'),
     cucumber: Technology.new('cucumber', 'Cucumber', 'cucumber-plain', 'success'),
     cplusplus: Technology.new('cplusplus', 'C++', 'cplusplus-plain', 'danger'),
     d3: Technology.new('d3', 'D3.js', 'd3js-plain', 'white', true),
     docker: Technology.new('docker', 'Docker', 'docker-plain', 'dark', true),
-    dotnet: Technology.new('dotnet', '.net', 'dot-net-plain-wordmark', 'white', true),
+    dotnet: Technology.new('dot-net', '.net', 'dot-net-plain-wordmark', 'white', true),
     java: Technology.new('java', 'Java', 'java-plain', 'white', true),
     javascript: Technology.new('javascript', 'Javascript', 'javascript-plain', 'warning'),
     mysql: Technology.new('mysql', 'MySQL', 'mysql-plain', 'dark'),
-    oracle: Technology.new('oracle', 'Oracle', 'oracle-original', 'white', true),
     postgresql: Technology.new('postgresql', 'PostgreSQL', 'postgresql-plain', 'info'),
     rails: Technology.new('rails', 'Rails', 'rails-plain', 'white', true),
     react: Technology.new('react', 'React', 'react-original', 'white', true),

@@ -2,10 +2,9 @@
 
 module HomeHelper
   def tech_tag(technology)
-    content_tag(:span, class: [:tag, "is-#{technology.level}"]) do
-      concat content_tag(:i, '', class: "devicon-#{technology.class_name}")
-      concat '&nbsp;'.html_safe
-      concat technology.display
+    content_tag(:div, class: ["p-1 flex text-center justify-between items-center inline-block bg-white border border-gray-300 rounded-lg px-3 text-xs mr-2"]) do
+      concat render(template: "icons/#{technology.name}").html_safe
+      concat "<div class='pl-4 font-bold'>#{technology.display}</div>".html_safe
     end
   end
 end
